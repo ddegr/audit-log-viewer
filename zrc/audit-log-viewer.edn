@@ -1,0 +1,14 @@
+{ns audit-log-viewer
+ import #{aidbox
+          zenbox}
+
+ entrypoint
+ {:zen/tags #{aidbox/system}}
+
+ AuditEventR5
+ {:zen/tags        #{zen/schema zenbox/persistent}
+  :confirms        #{zenbox/Resource}
+  :resourceType    "AuditEventR5"
+  :type            zen/map
+  :validation-type :open}
+ }
