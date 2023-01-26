@@ -5,6 +5,13 @@
  entrypoint
  {:zen/tags #{aidbox/system}}
 
+ AuditEventR4
+ {:zen/tags        #{zen/schema zenbox/persistent}
+  :confirms        #{zenbox/Resource}
+  :resourceType    "AuditEventR4"
+  :type            zen/map
+  :validation-type :open}
+
  AuditEventR5
  {:zen/tags        #{zen/schema zenbox/persistent}
   :confirms        #{zenbox/Resource}
